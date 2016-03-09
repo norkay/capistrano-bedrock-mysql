@@ -71,7 +71,7 @@ def create_backup(host, user, password, name, timestamp)
 end
 
 def remove_old_backups(path)
-  execute "(cd #{path}; ls -1tr | head -n -5 | xargs -d '\\n' rm)" # Keep only five latest
+  execute "(cd #{path}; ls -1tr | head -n -5 | xargs -r -d '\\n' rm)" # Keep only five latest
 end
 
 def get_latest_backup_filename(path)
