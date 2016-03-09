@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = 'capistrano-bedrock-mysql'
-  spec.version       = '0.0.6'
+  spec.version       = '0.0.7'
   spec.authors       = ['Fredrik Sundström']
   spec.email         = ['fredrik.sundstrom@norkay.se']
   spec.description   = %q{MySQL tasks for roots/bedrock, using Capistrano 3.x}
