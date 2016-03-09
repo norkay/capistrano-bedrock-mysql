@@ -5,7 +5,7 @@
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'capistrano-bedrock-mysql', '~> 0.0.1'
+gem 'capistrano-bedrock-mysql', '~> 0.0.6'
 ```
 
 And then execute:
