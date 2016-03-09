@@ -39,7 +39,7 @@ namespace(:mysql) do
   task :download do
     on roles(:db) do
       filename = get_latest_backup_filename("#{shared_path}/db_backups")
-      download! "#{shared_path}/db_backups/#{filename}", "etc/db_backups/remote.sql"
+      download! "#{shared_path}/db_backups/#{filename}", "example_dev.sql"
     end
   end
 
@@ -54,7 +54,7 @@ namespace(:mysql) do
   desc "Clean and import the remote MySQL database to the local one"
   task :import do
     on roles(:db) do
-      import_local_mysql_database("etc/db_backups/remote.sql")
+      import_local_mysql_database("example_dev.sql")
       puts "Database imported!"
     end
   end

@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    bedrock-capistrano-mysql (0.0.2)
+    capistrano-bedrock-mysql (0.0.2)
       capistrano (>= 3.0.0.pre)
       dotenv (>= 2.0.1)
 
@@ -28,4 +28,4 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bedrock-capistrano-mysql!
+  capistrano-bedrock-mysql!

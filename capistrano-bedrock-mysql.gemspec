@@ -1,14 +1,15 @@
 # coding: utf-8
-$:.push File.expand_path("../lib", __FILE__)
+lib = File.expand_path('../lib', __FILE__)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
-  spec.name          = 'bedrock-capistrano-mysql'
-  spec.version       = '0.0.5'
+  spec.name          = 'capistrano-bedrock-mysql'
+  spec.version       = '0.0.6'
   spec.authors       = ['Fredrik Sundström']
   spec.email         = ['fredrik.sundstrom@norkay.se']
   spec.description   = %q{MySQL tasks for roots/bedrock, using Capistrano 3.x}
   spec.summary       = %q{MySQL tasks for roots/bedrock, using Capistrano 3.x}
-  spec.homepage      = 'https://github.com/norkay/bedrock-capistrano-mysql'
+  spec.homepage      = 'https://github.com/norkay/capistrano-bedrock-mysql'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files`.split($/)

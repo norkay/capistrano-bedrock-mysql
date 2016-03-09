@@ -5,7 +5,7 @@
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'bedrock-capistrano-mysql', '~> 0.0.1'
+gem 'capistrano-bedrock-mysql', '~> 0.0.1'
 ```
 
 And then execute:
@@ -14,7 +14,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install bedrock-capistrano-mysql
+    $ gem install capistrano-bedrock-mysql
 
 You need to add two lines to your local .env file:
 
@@ -30,10 +30,10 @@ You also need to add the line VAGRANT_PATH to your local .env file, pointing to 
 Require the module in your `Capfile`:
 
 ```ruby
-require 'bedrock-capistrano-mysql'
+require 'capistrano-bedrock-mysql'
 ```
 
-`bedrock-capistrano-mysql` comes with five tasks:
+`capistrano-bedrock-mysql` comes with five tasks:
 
 * mysql:backup
 * mysql:download
