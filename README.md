@@ -34,7 +34,7 @@ Important! You need to disable the fix for tty mentioned here: https://github.co
 Require the module in your `Capfile`:
 
 ```ruby
-require 'capistrano-bedrock-mysql'
+require 'capistrano/bedrock/mysql'
 ```
 
 `capistrano-bedrock-mysql` comes with five tasks:
