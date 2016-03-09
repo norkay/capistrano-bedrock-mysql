@@ -27,6 +27,8 @@ You also need to add the line VAGRANT_PATH to your local .env file, pointing to 
 
 You will need to create the folder db_backups in your shared folder.
 
+Important! You need to disable the fix for tty mentioned here: https://github.com/mitchellh/vagrant/issues/1673#issuecomment-28288042
+
 ## Usage
 
 Require the module in your `Capfile`:
