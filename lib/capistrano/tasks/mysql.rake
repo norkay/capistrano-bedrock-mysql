@@ -67,7 +67,7 @@ def create_dir(path)
 end
 
 def create_backup(host, user, password, name, timestamp)
-  execute "mysqldump -h #{host} -u#{user} -p#{password} #{name} > #{shared_path}/db_backups/#{timestamp}.sql"
+  execute "mysqldump -h #{host} -u#{user} -p'#{password}' #{name} > #{shared_path}/db_backups/#{timestamp}.sql"
 end
 
 def remove_old_backups(path)
